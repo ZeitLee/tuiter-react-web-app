@@ -7,224 +7,299 @@
     <!-- link to css-->
     <link href="index.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/a1ca9991d2.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap library -->
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Icons -->
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
 </head>
 
-<body class="wd-bg-color-black wd-section-border">
-    <div class="wd-grid-row ">
-        <div class="wd-float-left wd-margin-top-8">
-            <form class="wd-margin-offset" id="search-tuiter">
-                <input
-                    class="wd-bg-color-search wd-rounded-corners-all-around wd-margin-offset wd-text-color-white wd-padding-left-30 wd-padding-top-bottom-8"
-                    size="50;" placeholder="Search Tuiter" />
-            </form>
-        </div>
+<body class="wd-section-border">
 
-        <div class="wd-float-right wd-margin-right-12 wd-margin-top-16">
-            <a class="wd-remove-underline" href="explore-settings.html"><i
-                    class="fas fa-light fa-gear wd-text-color-highlight wd-font-size-20"></i></a>
-        </div>
+    <div class="container">
 
-        <div class="wd-float-done"></div>
+        <div class="row">
+            <div class="col-2">
+                <ul class="list-group wd-margin-top-16">
+                    <li class="list-group-item"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="wd-padding-left-2">Home</span>
+                    </li>
+                    <li class="list-group-item active">
+                        <i class="fa-solid fa-hashtag"></i>
+                        <span class="wd-padding-left-2">Explore</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="wd-padding-left-2">Notifications</span>
+                    </li>
+
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="wd-padding-left-2">Messages</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="wd-padding-left-2">Bookmarks</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-list"></i>
+                        <span class="wd-padding-left-2">Lists</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="wd-padding-left-2">Profile</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <span class="wd-padding-left-2">More</span>
+                    </li>
+                </ul>
+
+                <button type="button"
+                    class="wd-rounded-corners-button wd-width-full wd-margin-top-12 wd-bg-color-lightblue wd-border-none wd-text-color-white wd-padding-top-bottom-6">
+                    Click Me!</button>
+            </div>
+            <div class="col-8 bg-warning">
+                <div class="wd-grid-row ">
+                    <div class="wd-float-left wd-margin-top-16">
+                        <form class="wd-margin-offset" id="search-tuiter">
+                            <input
+                                class="wd-bg-color-search wd-rounded-corners-all-around wd-margin-offset wd-text-color-white wd-padding-left-30 wd-padding-top-bottom-8"
+                                size="50;" placeholder="Search Tuiter" />
+                        </form>
+                    </div>
+
+                    <div class="wd-float-right wd-margin-right-12 wd-margin-top-16">
+                        <a class="wd-remove-underline" href="explore-settings.html"><i
+                                class="fas fa-light fa-gear wd-text-color-highlight wd-font-size-20"></i></a>
+                    </div>
+
+                    <div class="wd-float-done"></div>
+                </div>
+
+                <div class="wd-grid-row ">
+                    <a class="wd-remove-underline" href="#">
+                        <div
+                            class="wd-float-left wd-padding-fat wd-margin-offset wd-border-bottom wd-border-color-highlight">
+                            <label for="for-you" class="wd-link-font-size wd-text-color-highlight">
+                                <b>
+                                    For you
+                                </b></label>
+                        </div>
+                    </a>
+
+                    <a class="wd-remove-underline" href="#">
+                        <div class="wd-float-left  wd-padding-fat">
+                            <label for="trending" class="wd-link-font-size wd-text-color-normal">
+                                <b>
+                                    Trending
+                                </b>
+                            </label>
+                        </div>
+                    </a>
+
+                    <a class="wd-remove-underline" href="#">
+                        <div class="wd-float-left  wd-padding-fat">
+                            <label for="covid-19" class="wd-link-font-size wd-text-color-normal">
+                                <b>
+                                    COVID-19
+                                </b>
+                            </label>
+                        </div>
+                    </a>
+
+                    <a class="wd-remove-underline" href="#">
+                        <div class="wd-float-left  wd-padding-fat">
+                            <label for="news" class="wd-link-font-size wd-text-color-normal">
+                                <b>
+                                    News
+                                </b></label>
+                        </div>
+                    </a>
+
+                    <a class="wd-remove-underline" href="#">
+                        <div class="wd-float-left  wd-padding-fat">
+                            <label for="sports" class="wd-link-font-size wd-text-color-normal">
+                                <b>
+                                    Sports
+                                </b></label>
+                        </div>
+                    </a>
+
+                    <a class="wd-remove-underline" href="#">
+                        <div class="wd-float-left  wd-padding-fat">
+                            <label for="entertainment" class="wd-link-font-size wd-text-color-normal">
+                                <b>
+                                    Entertainment
+                                </b></label>
+                        </div>
+                    </a>
+
+                    <div class="wd-float-done"></div>
+                </div>
+
+                <div class="wd-grid-row">
+                    <div class="wd-border-delimiter wd-delimiter wd-bg-color-black"></div>
+                </div>
+
+
+
+                <div class="wd-grid-row wd-section-border">
+                    <div class="wd-float-left">
+                        <div class="wd-posted-font-size wd-text-color-posted wd-margin-offset wd-margin-top-16">
+                            Trending in Science
+                        </div>
+                        <div class="d-link-font-size wd-text-color-white wd-margin-offset wd-margin-top-8">
+                            <b>Starship</b>
+                        </div>
+                        <div
+                            class="wd-posted-font-size wd-text-color-posted wd-margin-offset wd-margin-top-8 wd-margin-bottom-16">
+                            55.5k Tuiters
+                        </div>
+                    </div>
+
+                    <div class="wd-float-right">
+
+                    </div>
+
+                    <div class="wd-float-done"></div>
+                </div>
+
+                <div class="wd-grid-row wd-section-border">
+                    <div class="wd-float-left">
+                        <div class="wd-posted-font-size wd-text-color-posted wd-margin-offset wd-margin-top-16">
+                            Sports Trending
+                        </div>
+                        <div class="d-link-font-size wd-text-color-white wd-margin-offset wd-margin-top-8">
+                            <b>Joe Rogan</b>
+                        </div>
+                        <div
+                            class="wd-posted-font-size wd-text-color-posted wd-margin-offset wd-margin-top-8 wd-margin-bottom-16">
+                            5,218 Tuiters
+                        </div>
+                    </div>
+
+                    <div class="wd-float-right">
+
+                    </div>
+
+                    <div class="wd-float-done"></div>
+                </div>
+
+                <div class="wd-grid-row wd-section-border ">
+                    <div class="wd-float-left-content">
+                        <p class="wd-posted-font-size wd-text-color-white wd-margin-offset wd-margin-bottom-4">
+                            The New York Times
+                            <span class="wd-posted-font-size wd-text-color-posted">
+                                · Yesterday
+                            </span>
+                        </p>
+                        <p class="wd-link-font-size wd-text-color-white wd-margin-offset wd-margin-top-4">
+                            <b>
+                                Attractions in Midtown | Times Square | NYCgo
+                            </b>
+
+                        </p>
+                    </div>
+
+                    <div class="wd-float-right wd-padding-fat">
+                        <img src="time-square.jpeg" height="100px" width="100px"
+                            class="wd-rounded-corners-posted-picture " />
+                    </div>
+
+                    <div class="wd-float-done"></div>
+                </div>
+
+                <div class="wd-grid-row wd-section-border ">
+                    <div class="wd-float-left-content">
+                        <p class="wd-posted-font-size wd-text-color-posted wd-margin-offset wd-margin-bottom-4">
+                            COVID-19 · LIVE
+                        </p>
+                        <p class="wd-link-font-size wd-text-color-white wd-margin-offset wd-margin-top-4">
+                            <b>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore
+                                et dolore magna aliqua.
+                            </b>
+
+                        </p>
+                    </div>
+
+                    <div class="wd-float-right wd-padding-fat">
+                        <img src="covid-19.png" height="100px" width="100px"
+                            class="wd-rounded-corners-posted-picture " />
+                    </div>
+
+                    <div class="wd-float-done"></div>
+                </div>
+
+                <div class="wd-grid-row wd-section-border ">
+                    <div class="wd-float-left-content">
+                        <p class="wd-posted-font-size wd-text-color-posted wd-margin-offset wd-margin-bottom-4">
+                            Sports · 3 mins ago
+                        </p>
+                        <p class="wd-link-font-size wd-text-color-white wd-margin-offset wd-margin-top-4">
+                            <b>
+                                Red Sox Baseball game.
+                            </b>
+
+                        </p>
+                    </div>
+
+                    <div class="wd-float-right wd-padding-fat">
+                        <img src="redsox.jpeg" height="100px" width="100px"
+                            class="wd-rounded-corners-posted-picture " />
+                    </div>
+
+                    <div class="wd-float-done"></div>
+                </div>
+
+                <div class="wd-grid-row wd-section-border ">
+                    <div class="wd-float-left-content">
+                        <p class="wd-posted-font-size wd-text-color-white wd-margin-offset wd-margin-bottom-4">
+                            The Google Company
+                            <span class="wd-posted-font-size wd-text-color-posted">
+                                · 10 mins ago
+                            </span>
+                        </p>
+                        <p class="wd-link-font-size wd-text-color-white wd-margin-offset wd-margin-top-4">
+                            <b>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been
+                                the
+                                industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled it
+                                to
+                                make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic
+                                typesetting,
+                                remaining essentially
+                                unchanged.
+                            </b>
+
+                        </p>
+                    </div>
+
+                    <div class="wd-float-right wd-padding-fat ">
+                        <img src="google-posted.jpeg" height="100px" width="100px"
+                            class="wd-rounded-corners-posted-picture " />
+                    </div>
+
+                    <div class="wd-float-done"></div>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <h3>Column C</h3>
+            </div>
+        </div>
     </div>
 
-    <div class="wd-grid-row ">
-        <a class="wd-remove-underline" href="#">
-            <div class="wd-float-left wd-padding-fat wd-margin-offset wd-border-bottom wd-border-color-highlight">
-                <label for="for-you" class="wd-link-font-size wd-text-color-highlight">
-                    <b>
-                        For you
-                    </b></label>
-            </div>
-        </a>
 
-        <a class="wd-remove-underline" href="#">
-            <div class="wd-float-left  wd-padding-fat">
-                <label for="trending" class="wd-link-font-size wd-text-color-normal">
-                    <b>
-                        Trending
-                    </b>
-                </label>
-            </div>
-        </a>
-
-        <a class="wd-remove-underline" href="#">
-            <div class="wd-float-left  wd-padding-fat">
-                <label for="covid-19" class="wd-link-font-size wd-text-color-normal">
-                    <b>
-                        COVID-19
-                    </b>
-                </label>
-            </div>
-        </a>
-
-        <a class="wd-remove-underline" href="#">
-            <div class="wd-float-left  wd-padding-fat">
-                <label for="news" class="wd-link-font-size wd-text-color-normal">
-                    <b>
-                        News
-                    </b></label>
-            </div>
-        </a>
-
-        <a class="wd-remove-underline" href="#">
-            <div class="wd-float-left  wd-padding-fat">
-                <label for="sports" class="wd-link-font-size wd-text-color-normal">
-                    <b>
-                        Sports
-                    </b></label>
-            </div>
-        </a>
-
-        <a class="wd-remove-underline" href="#">
-            <div class="wd-float-left  wd-padding-fat">
-                <label for="entertainment" class="wd-link-font-size wd-text-color-normal">
-                    <b>
-                        Entertainment
-                    </b></label>
-            </div>
-        </a>
-
-        <div class="wd-float-done"></div>
-    </div>
-
-    <div class="wd-grid-row">
-        <div class="wd-border-delimiter wd-delimiter wd-bg-color-black"></div>
-    </div>
-
-
-
-    <div class="wd-grid-row wd-section-border">
-        <div class="wd-float-left">
-            <div class="wd-posted-font-size wd-text-color-posted wd-margin-offset wd-margin-top-16">
-                Trending in Science
-            </div>
-            <div class="d-link-font-size wd-text-color-white wd-margin-offset wd-margin-top-8">
-                <b>Starship</b>
-            </div>
-            <div class="wd-posted-font-size wd-text-color-posted wd-margin-offset wd-margin-top-8 wd-margin-bottom-16">
-                55.5k Tuiters
-            </div>
-        </div>
-
-        <div class="wd-float-right">
-
-        </div>
-
-        <div class="wd-float-done"></div>
-    </div>
-
-    <div class="wd-grid-row wd-section-border">
-        <div class="wd-float-left">
-            <div class="wd-posted-font-size wd-text-color-posted wd-margin-offset wd-margin-top-16">
-                Sports Trending
-            </div>
-            <div class="d-link-font-size wd-text-color-white wd-margin-offset wd-margin-top-8">
-                <b>Joe Rogan</b>
-            </div>
-            <div class="wd-posted-font-size wd-text-color-posted wd-margin-offset wd-margin-top-8 wd-margin-bottom-16">
-                5,218 Tuiters
-            </div>
-        </div>
-
-        <div class="wd-float-right">
-
-        </div>
-
-        <div class="wd-float-done"></div>
-    </div>
-
-    <div class="wd-grid-row wd-section-border ">
-        <div class="wd-float-left-content">
-            <p class="wd-posted-font-size wd-text-color-white wd-margin-offset wd-margin-bottom-4">
-                The New York Times
-                <span class="wd-posted-font-size wd-text-color-posted">
-                    · Yesterday
-                </span>
-            </p>
-            <p class="wd-link-font-size wd-text-color-white wd-margin-offset wd-margin-top-4">
-                <b>
-                    Attractions in Midtown | Times Square | NYCgo
-                </b>
-
-            </p>
-        </div>
-
-        <div class="wd-float-right wd-padding-fat">
-            <img src="time-square.jpeg" height="100px" width="100px" class="wd-rounded-corners-posted-picture " />
-        </div>
-
-        <div class="wd-float-done"></div>
-    </div>
-
-    <div class="wd-grid-row wd-section-border ">
-        <div class="wd-float-left-content">
-            <p class="wd-posted-font-size wd-text-color-posted wd-margin-offset wd-margin-bottom-4">
-                COVID-19 · LIVE
-            </p>
-            <p class="wd-link-font-size wd-text-color-white wd-margin-offset wd-margin-top-4">
-                <b>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </b>
-
-            </p>
-        </div>
-
-        <div class="wd-float-right wd-padding-fat">
-            <img src="covid-19.png" height="100px" width="100px" class="wd-rounded-corners-posted-picture " />
-        </div>
-
-        <div class="wd-float-done"></div>
-    </div>
-
-    <div class="wd-grid-row wd-section-border ">
-        <div class="wd-float-left-content">
-            <p class="wd-posted-font-size wd-text-color-posted wd-margin-offset wd-margin-bottom-4">
-                Sports · 3 mins ago
-            </p>
-            <p class="wd-link-font-size wd-text-color-white wd-margin-offset wd-margin-top-4">
-                <b>
-                    Red Sox Baseball game.
-                </b>
-
-            </p>
-        </div>
-
-        <div class="wd-float-right wd-padding-fat">
-            <img src="redsox.jpeg" height="100px" width="100px" class="wd-rounded-corners-posted-picture " />
-        </div>
-
-        <div class="wd-float-done"></div>
-    </div>
-
-    <div class="wd-grid-row wd-section-border ">
-        <div class="wd-float-left-content">
-            <p class="wd-posted-font-size wd-text-color-white wd-margin-offset wd-margin-bottom-4">
-                The Google Company
-                <span class="wd-posted-font-size wd-text-color-posted">
-                    · 10 mins ago
-                </span>
-            </p>
-            <p class="wd-link-font-size wd-text-color-white wd-margin-offset wd-margin-top-4">
-                <b>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard
-                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                    make a type specimen
-                    book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                    remaining essentially
-                    unchanged.
-                </b>
-
-            </p>
-        </div>
-
-        <div class="wd-float-right wd-padding-fat ">
-            <img src="google-posted.jpeg" height="100px" width="100px" class="wd-rounded-corners-posted-picture " />
-        </div>
-
-        <div class="wd-float-done"></div>
-    </div>
 
 
 
