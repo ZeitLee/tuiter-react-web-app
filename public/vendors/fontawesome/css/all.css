@@ -187,6 +187,23 @@
 .fa-inverse {
   color: #fff; }
 
+/* My Icon */
+
+.fa-house:before {
+  content: "\f015"; }
+
+.fa-more:before {
+  content: "\f141"; }
+
+.fa-gear:before {
+  content: "\f013"; }
+
+.fa-magnifying-glass:before {
+  content: "\f002"; }
+
+.fa-circle-check:before {
+  content: "\f058"; }
+
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */
 .fa-500px:before {
