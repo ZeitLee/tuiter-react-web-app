@@ -204,6 +204,13 @@
 .fa-circle-check:before {
   content: "\f058"; }
 
+.fa-my-t:before {
+  content: "\e280"; }
+
+.fa-square-arrow-up-right:before{
+  content: "\f35d"; }
+
+
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */
 .fa-500px:before {

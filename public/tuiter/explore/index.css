@@ -6,7 +6,7 @@
 }
 
 .wd-bg-color-search {
-    background-color: rgb(47, 51, 54);
+    background-color: rgb(231, 236, 241);
 }
 
 .wd-bg-color-lightblue {
@@ -21,12 +21,16 @@
     color: blue;
 }
 
+.wd-text-color-black {
+    color: black;
+}
+
 .wd-text-color-highlight {
     color: rgb(29,161,242);
 }
 
 .wd-text-color-normal {
-    color: rgb(110, 118, 125);
+    color: rgb(161, 168, 175);
 }
 
 .wd-text-color-posted {
@@ -56,6 +60,11 @@
 
 .wd-font-size-icons-m {
     font-size: 1.5em;
+}
+
+/* Font style */
+.wd-font-bold {
+  font-weight: bold;
 }
 
 /* Border */
@@ -94,11 +103,20 @@
     border-left: 1px;
     border-right: 1px;
     border-bottom: 1px;
-    border-color: rgb(47, 51, 54);
+    border-top: 0px;
+    border-color: rgb(177, 177, 177);
     border-style: solid; 
 }
 
-.wd-border-bottom {
+.wd-border-bottom-1 {
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 1px;
+    border-style: solid; 
+}
+
+.wd-border-bottom-5 {
     border-left: 0px;
     border-right: 0px;
     border-top: 0px;
@@ -119,11 +137,20 @@
 }
 
 .wd-color-border {
-    border-color: rgb(47, 51, 54);
+    border-color: rgb(231, 226, 226);
 }
 
 .wd-border-color-highlight {
     border-color: rgb(29,161,242);;
+}
+
+.wd-border-main-content {
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-color: rgb(231, 226, 226);
+    border-style: solid; 
 }
 
 /* Margin */
@@ -192,6 +219,10 @@
     padding-left: 50px;
 }
 
+.wd-padding-left-lg {
+    padding-left: 4em;
+}
+
 .wd-padding-right {
     padding-right: 12px;
 }
@@ -224,8 +255,17 @@
     padding-bottom:8px;
 }
 
+.wd-padding-top-bottom-lg {
+    padding-top: .75em;
+    padding-bottom: .75rem;
+}
+
 
 /* Corners Styling */
+
+.wd-rounded-corners-top {
+    border-radius: 20px 20px 0px 0px;
+}
 
 .wd-rounded-corners-all-around {
     border-radius: 50px;
@@ -247,6 +287,7 @@
 .wd-width-full {
     width : 100%;
 }
+
 
 
 /* Icon Gear */
@@ -293,17 +334,28 @@
 
 .wd-pos-abs-magnifying {
     position: absolute;
-    left: 20px;
-    top: 10px;
+    left: 2em;
+    top: 16px;
 }
 
 .wd-pos-abs-picture-text {
     position: absolute;
     left: 30px;
-    bottom: 10px;
+    bottom: 20px;
 }
 
-/* Button */
+.wd-pos-nav-icon {
+    position: absolute;
+    left: 5px;
+}
+
+.wd-pos-nav-text {
+    position: absolute;
+    left: 3em;
+    top: 1em;
+}
+
+/* Override */
 
 .btn-primary.override-tuit {
    width: 100%;
@@ -312,7 +364,34 @@
    border-style: dashed;
    font-size: 1em;
    font-weight: bolder;
+   background-color: rgb(29,161,242);
+} 
+
+.btn-primary.override-follow {
+   width: 100%;
+   border-width: 0px;
+   border-radius: 30px;
+   border-style: dashed;
+   font-size: 1em;
+   font-weight: bolder;
+   background-color: black;
 }
+
+.wd-rounded-top-20 {
+  border-top-right-radius: 20px!important;
+  border-top-left-radius: 20px!important;
+}
+
+.wd-rounded-bottom-20 {
+  border-bottom-right-radius: 20px!important;
+  border-bottom-left-radius: 20px!important;
+}
+
+.wd-list-group-bg .list-group-item {
+  background-color: rgb(231, 236, 241);
+  border: 0px;
+}
+
 
 /* Image */
 

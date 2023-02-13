@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <!-- link to css     <script src="https://kit.fontawesome.com/a1ca9991d2.js" crossorigin="anonymous"></script>-->
+    <!-- link to css -->
     <link href="index.css" rel="stylesheet" />
-
 
     <!-- Bootstrap library -->
     <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -14,165 +13,224 @@
     <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
 </head>
 
-<body class="wd-section-border">
+<body class=" position-relative">
+    <div class="d-block d-sm-none fa-2x wd-pos-abs-magnifying">XS</div>
+    <div class="d-none d-sm-block d-md-none fa-2x wd-pos-abs-magnifying">S</div>
+    <div class="d-none d-md-block d-lg-none fa-2x wd-pos-abs-magnifying">M</div>
+    <div class="d-none d-lg-block d-xl-none fa-2x wd-pos-abs-magnifying">L</div>
+    <div class="d-none d-xl-block d-xxl-none fa-2x wd-pos-abs-magnifying">XL</div>
+    <div class="d-none d-xxl-block fa-2x wd-pos-abs-magnifying">XXL</div>
+
 
     <div class="container">
 
         <div class="row">
-            <div class="col-2">
-                <ul class="list-group mt-3">
-                    <li class="list-group-item"><i class="fab fa-twitter"></i></li>
-                    <li class="list-group-item">
-                        <i class="fas fa-house"></i>
-                        <span class="wd-padding-left-2">Home</span>
-                    </li>
-                    <li class="list-group-item active">
-                        <i class="fa fa-hashtag"></i>
-                        <span class="wd-padding-left-2">Explore</span>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fa fa-bell"></i>
-                        <span class="wd-padding-left-2">Notifications</span>
-                    </li>
+            <div class="col-2 col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2 px-1">
+                <div class="list-group mt-3 position-relative">
+                    <a href="#" class="list-group-item border-0 ps-0"><i
+                            class="fa fa-text-height fa-2x wd-text-color-highlight"></i></a>
+                    <a href="#" class="list-group-item border-0 ps-0">
+                        <i class="fas fa-house wd-font-size-icons-m wd-text-color-normal py-2"></i>
+                        <span class="wd-pos-nav-text d-none d-xl-inline wd-text-color-normal">Home</span>
+                    </a>
+                    <a href="#" class="list-group-item border-0 ps-0">
+                        <i class="fa fa-hashtag wd-font-size-icons-m py-2"></i>
+                        <span class="wd-pos-nav-text d-none d-xl-inline"><b>Explore</b></span>
+                    </a>
+                    <a href="#" class="list-group-item border-0 ps-0">
+                        <i class="fa fa-bell wd-font-size-icons-m wd-text-color-normal py-2"></i>
+                        <span class="wd-pos-nav-text d-none d-xl-inline wd-text-color-normal">Notifications</span>
+                    </a>
 
-                    <li class="list-group-item">
-                        <i class="fa fa-envelope"></i>
-                        <span class="wd-padding-left-2">Messages</span>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fa fa-bookmark"></i>
-                        <span class="wd-padding-left-2">Bookmarks</span>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fa fa-list"></i>
-                        <span class="wd-padding-left-2">Lists</span>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fa fa-user"></i>
-                        <span class="wd-padding-left-2">Profile</span>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fas fa-more"></i>
-                        <span class="wd-padding-left-2">More</span>
-                    </li>
-                </ul>
+                    <a href="#" class="list-group-item border-0 ps-0">
+                        <i class="fa fa-envelope wd-font-size-icons-m wd-text-color-normal py-2"></i>
+                        <span class="wd-pos-nav-text  d-none d-xl-inline wd-text-color-normal">Messages</span>
+                    </a>
+                    <a href="#" class="list-group-item border-0 ps-0">
+                        <i class="fa fa-bookmark wd-font-size-icons-m wd-text-color-normal py-2"></i>
+                        <span class="wd-pos-nav-text  d-none d-xl-inline wd-text-color-normal">Bookmarks</span>
+                    </a>
+                    <a href="#" class="list-group-item border-0 ps-0">
+                        <i class="fa fa-list wd-font-size-icons-m wd-text-color-normal py-2"></i>
+                        <span class="wd-pos-nav-text  d-none d-xl-inline wd-text-color-normal">Lists</span>
+                    </a>
+                    <a href="#" class="list-group-item border-0 ps-0">
+                        <i class="fa fa-user wd-font-size-icons-m wd-text-color-normal py-2"></i>
+                        <span class="wd-pos-nav-text d-none d-xl-inline wd-text-color-normal">Profile</span>
+                    </a>
+                    <a href="#" class="list-group-item border-0 ps-0">
+                        <i class="fas fa-more wd-font-size-icons-m wd-text-color-normal py-2"></i>
+                        <span class="wd-pos-nav-text d-none d-xl-inline wd-text-color-normal">More</span>
+                    </a>
+                </div>
 
                 <!-- Button -->
                 <button class="btn btn-primary override-tuit wd-margin-top-8">Tuit</button>
             </div>
 
             <!-- Main Screen (Col B)-->
-            <div class="col-6">
-                <!-- Searching bar -->
-                <div class="row mt-3 align-items-center wd-section-border mx-1">
-                    <div class="col-10 wd-section-border">
-                        <form class="wd-pos-relative-0" id="search-tuiter">
-                            <input class="wd-rounded-corners-all-around px-5 wd-padding-top-bottom-4 wd-width-full"
-                                size="50;" placeholder="Search Tuiter" />
-                            <i class="fas fa-magnifying-glass wd-pos-abs-magnifying wd-font-size-icons-s"></i>
-                        </form>
+            <div class="col-6 col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                <div class="mx-1 wd-border-main-content">
+                    <!-- Searching bar -->
+                    <div class="row mt-3 mb-2 align-items-center mx-1">
+                        <div class="col-11 position-relative ps-4">
+                            <form id="search-tuiter">
+                                <input
+                                    class="border-0 wd-rounded-corners-all-around wd-padding-top-bottom-lg wd-padding-left-lg wd-width-full wd-bg-color-search"
+                                    placeholder="Search Tuiter" />
+                                <i class="fas fa-magnifying-glass wd-pos-abs-magnifying fa-lg wd-text-color-normal"></i>
+                            </form>
+                        </div>
 
-
+                        <!-- Gear icon -->
+                        <div class="col-1">
+                            <a href="explore-settings.html">
+                                <i class="fa fa-gear fa-lg wd-text-color-normal float-end"></i>
+                            </a>
+                        </div>
 
                     </div>
 
-                    <!-- Gear icon -->
-                    <div class="col-2 wd-text-color-highlight">
-                        <a class="wd-remove-underline" href="explore-settings.html">
-                            <i class="fas fa-gear wd-padding-right-12 float-end wd-font-size-icons-m"></i>
-                        </a>
+
+                    <!-- Navigations -->
+                    <div class="row mb-2 mx-1">
+                        <ul class="nav nav-fill wd-font-bold py-2">
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="for-you.html">
+                                    <span class="wd-text-color-black wd-border-bottom-5 wd-border-color-highlight pb-3">
+                                        For you
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="trending.html">
+                                    <span class="wd-text-color-normal">
+                                        Trending
+                                    </span>
+                                </a>
+                            </li>
+                            <li class=" nav-item">
+                                <a class="nav-link" href="news.html">
+                                    <span class="wd-text-color-normal">
+                                        News
+                                    </span></a>
+                            </li>
+                            <li class=" nav-item">
+                                <a class="nav-link" href="sports.html">
+                                    <span class="wd-text-color-normal">
+                                        Sports
+                                    </span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-none d-md-block" href="entertainment.html">
+                                    <span class="wd-text-color-normal">
+                                        Entertainment
+                                    </span></a>
+                            </li>
+                        </ul>
                     </div>
 
-                </div>
 
 
-                <!-- Navigations -->
-                <div class="row wd-padding-top-bottom-6 wd-section-border mx-1">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active wd-text-color-highlight" href="for-you.html">For you</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="trending.html">Trending</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">COVID-19</a>
-                        </li>
-                        <li class=" nav-item">
-                            <a class="nav-link" href="news.html">News</a>
-                        </li>
-                        <li class=" nav-item">
-                            <a class="nav-link" href="sports.html">Sports</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="entertainment.html">Entertainment</a>
-                        </li>
-                    </ul>
-                </div>
+                    <!-- Main Picture-->
+                    <div class="wd-pos-relative-0 wd-border-bottom-1 wd-color-border">
+                        <img src="../../images/starship-main.jpeg" class="img-fluid pb-1">
+                        <span class="wd-pos-abs-picture-text wd-text-color-white wd-font-size-md">
+                            USA · LIVE <br />
+                            <b class="wd-text-color-white wd-font-size-lg">SpaceX's
+                                Starship</b></span>
 
-                <!-- Main Picture-->
-                <div class="wd-pos-relative-0 mx-1">
-                    <img src="../../images/starship-main.jpeg" class="wd-section-border img-fluid">
-                    <b class=" wd-pos-abs-picture-text wd-text-color-white wd-font-size-lg">SpaceX's Starship</b>
-                </div>
-
-
-                <!-- 1st Post -->
-                <div class="row mx-1 wd-section-border align-items-center py-2">
-                    <div class="col-10">
-                        <span class="wd-text-color-posted">Web Development</span><br />
-                        <b>ReactJS</b>
-                        <i class="fas fa-circle-check"></i>
-                        <span class="wd-text-color-posted px-1">- 2h</span><br />
-                        <b>React.js is a componenet based front end library that makes it very easy to build Single
-                            Page Applications or SPAs</b>
                     </div>
-                    <div class="col-2 ">
-                        <img src="../../images/reactJS.jpeg"
-                            class="wd-image-size-posted wd-rounded-corners-posted-picture float-end">
-                    </div>
-                </div>
 
-                <!-- 2nd -->
 
-                <div class="row mx-1 wd-section-border align-items-center py-2">
-                    <div class="col-10">
-                        <b>Javascript</b>
-                        <i class="fas fa-circle-check"></i>
-                        <span class="wd-text-color-posted px-1">- 2h</span><br />
-                        <b>Javascript is a programming language that can run on browsers as well as desktops</b><br />
-                        <span class="wd-text-color-posted">123K Tuits</span>
+                    <!-- 1st Post -->
+                    <div class="row mx-1 align-items-center py-2">
+                        <div class="col-10 col-xl-9 col-lg-8 col-sm-8">
+                            <span class="wd-text-color-posted">Web Development</span><br />
+                            <b>ReactJS</b>
+                            <i class="fas fa-circle-check"></i>
+                            <span class="wd-text-color-posted px-1">- 2h</span><br />
+                            <b>React.js is a componenet based front end library that makes it very easy to build Single
+                                Page Applications or SPAs</b>
+                        </div>
+                        <div class="col-2 col-xl-3 col-lg-4 col-sm-4">
+                            <img src="../../images/reactJS.jpeg"
+                                class="wd-image-size-posted wd-rounded-corners-posted-picture float-end">
+                        </div>
                     </div>
-                    <div class="col-2 ">
-                        <img src="../../images/javascript.png"
-                            class="wd-image-size-posted wd-rounded-corners-posted-picture float-end">
-                    </div>
-                </div>
 
-                <!-- 3rd-->
+                    <!-- 2nd -->
 
-                <div class="row mx-1 wd-section-border align-items-center py-2">
-                    <div class="col-10">
-                        <span class="wd-text-color-posted">Web Development</span><br />
-                        <b>jQuery</b><br />
-                        <span class="wd-text-color-posted">123K Tuits</span>
+                    <div class="row mx-1 align-items-center py-2">
+                        <div class="col-10 col-xl-9 col-lg-8 col-sm-8">
+                            <b>Javascript</b>
+                            <i class="fas fa-circle-check"></i>
+                            <span class="wd-text-color-posted px-1">- 2h</span><br />
+                            <b>Javascript is a programming language that can run on browsers as well as
+                                desktops</b><br />
+                            <span class="wd-text-color-posted">123K Tuits</span>
+                        </div>
+                        <div class="col-2 col-xl-3 col-lg-4 col-sm-4">
+                            <img src="../../images/javascript.png"
+                                class="wd-image-size-posted wd-rounded-corners-posted-picture float-end">
+                        </div>
                     </div>
-                    <div class="col-2 ">
-                        <img src="../../images/jQuery.jpeg"
-                            class="wd-image-size-posted wd-rounded-corners-posted-picture float-end">
-                    </div>
-                </div>
 
-                <!-- 4th -->
-                <div class="row mx-1 wd-section-border align-items-center py-2">
-                    <div class="col-10">
-                        <span class="wd-text-color-posted">Web Development</span><br />
-                        <b>NodeJS</b><br />
-                        <span class="wd-text-color-posted">123K Tuits</span>
+                    <!-- 2.2 -->
+
+                    <div class="row mx-1 py-4">
+                        <div class="col-11 align-items-center ">
+                            <span class="wd-text-color-posted">Politics · Trending</span><br />
+                            <b>Seizures</b><br />
+                            <span class="wd-text-color-posted">4,953 Tuits</span>
+                        </div>
+
+                        <div class="col-1">
+                            <i class="fas fa-more wd-text-color-normal pt-2 float-end"></i>
+                        </div>
+
                     </div>
-                    <div class="col-2 ">
-                        <img src="../../images/nodeJS.png"
-                            class="wd-image-size-posted wd-rounded-corners-posted-picture float-end">
+
+                    <!-- 3rd-->
+
+                    <div class="row mx-1 align-items-center py-2">
+                        <div class="col-10 col-xl-9 col-lg-8 col-sm-8">
+                            <span class="wd-text-color-posted">Web Development</span><br />
+                            <b>jQuery</b><br />
+                            <span class="wd-text-color-posted">123K Tuits</span>
+                        </div>
+                        <div class="col-2 col-xl-3 col-lg-4 col-sm-4">
+                            <img src="../../images/jQuery.jpeg"
+                                class="wd-image-size-posted wd-rounded-corners-posted-picture float-end">
+                        </div>
+                    </div>
+
+
+                    <div class="row mx-1 py-4">
+                        <div class="col-11 align-items-center ">
+                            <b>#InfiityPool</b><br />
+                            <span class="wd-text-color-posted">See the following content if you dare</span><br />
+                            <i class="fa fa-square-arrow-up-right px-1 wd-text-color-posted"></i>
+                            <span class="wd-text-color-posted">Promoted by NEON</span>
+                        </div>
+
+                        <div class="col-1">
+                            <i class="fas fa-more wd-text-color-normal pt-2 float-end"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- 4th -->
+                    <div class="row mx-1 align-items-center py-2">
+                        <div class="col-10 col-xl-9 col-lg-8 col-sm-8">
+                            <span class="wd-text-color-posted">Web Development</span><br />
+                            <b>NodeJS</b><br />
+                            <span class="wd-text-color-posted">123K Tuits</span>
+                        </div>
+                        <div class="col-2 col-xl-3 col-lg-4 col-sm-4">
+                            <img src="../../images/nodeJS.png"
+                                class="wd-image-size-posted wd-rounded-corners-posted-picture float-end">
+                        </div>
                     </div>
                 </div>
 
@@ -180,21 +238,27 @@
             </div>
 
             <!-- Follows -->
-            <div class="col-4">
-                <ul class="list-group mt-3">
-                    <li class="list-group-item"><b>Who to follow</b></li>
+            <div class="col-4 col-xxl-4 col-xl-4 col-lg-4 align-items-center px-1 d-none d-lg-block">
+                <ul class="list-group wd-list-group-bg mt-3">
+                    <li class="list-group-item contsie wd-font-size-icons-m wd-rounded-top-20 ">
+                        <b>Who
+                            to
+                            follow</b></li>
+
+
                     <li class="list-group-item">
                         <div class="row align-items-center">
-                            <div class="col-2">
+                            <div class="col-2 col-xxl-2 col-xl-2">
                                 <img src="../../images/java-icon.png"
                                     class="wd-rounded-corners-circle wd-image-size-follow">
                             </div>
-                            <div class="col-7">
-                                <div><b>Java</b><i class="fas fa-circle-check wd-padding-left-2"></i></div>
+                            <div class="col-6 col-xxl-7 col-xl-6">
+                                <div class="text-truncate"><b>Java</b><i
+                                        class=" fas fa-circle-check wd-padding-left-2"></i></div>
                                 <div class="wd-text-color-normal">@Java</div>
                             </div>
-                            <div class="col-3">
-                                <button class="btn btn-primary override-tuit">
+                            <div class="col-4 col-xxl-3 col-xl-4">
+                                <button class="btn btn-primary override-follow">
                                     Follow
                                 </button>
                             </div>
@@ -203,16 +267,18 @@
 
                     <li class="list-group-item">
                         <div class="row align-items-center">
-                            <div class="col-2">
+                            <div class="col-2 col-xxl-2 col-xl-2">
                                 <img src="../../images/relativity-space.jpeg"
                                     class="wd-rounded-corners-circle wd-image-size-follow">
                             </div>
-                            <div class="col-7">
-                                <div><b>Relativity Space</b><i class="fas fa-circle-check wd-padding-left-2"></i></div>
+                            <div class="col-6 col-xxl-7 col-xl-6">
+                                <div class="text-truncate"><b>Relativity Space</b><i class=" fas fa-circle-check
+                                    wd-padding-left-2"></i>
+                                </div>
                                 <div class="wd-text-color-normal">@relativityspace</div>
                             </div>
-                            <div class="col-3">
-                                <button class="btn btn-primary override-tuit">
+                            <div class="col-4 col-xxl-3 col-xl-4">
+                                <button class="btn btn-primary override-follow">
                                     Follow
                                 </button>
                             </div>
@@ -221,16 +287,18 @@
 
                     <li class="list-group-item">
                         <div class="row align-items-center">
-                            <div class="col-2">
+                            <div class="col-2 col-xxl-2 col-xl-2">
                                 <img src="../../images/virgin-gala.png"
                                     class="wd-rounded-corners-circle wd-image-size-follow">
                             </div>
-                            <div class="col-7">
-                                <div><b>Virgin Galactic</b><i class="fas fa-circle-check wd-padding-left-2"></i></div>
+                            <div class="col-6 col-xxl-7 col-xl-6">
+                                <div class="text-truncate"><b>Virgin Galactic</b><i
+                                        class="fas fa-circle-check wd-padding-left-2"></i>
+                                </div>
                                 <div class="wd-text-color-normal">@virgingalactic</div>
                             </div>
-                            <div class="col-3">
-                                <button class="btn btn-primary override-tuit">
+                            <div class="col-4 col-xxl-3 col-xl-4">
+                                <button class="btn btn-primary override-follow">
                                     Follow
                                 </button>
                             </div>
@@ -239,16 +307,17 @@
 
                     <li class="list-group-item">
                         <div class="row align-items-center">
-                            <div class="col-2">
+                            <div class="col-2 col-xxl-2 col-xl-2">
                                 <img src="../../images/nasa.jpeg"
                                     class="wd-rounded-corners-circle wd-image-size-follow">
                             </div>
-                            <div class="col-7">
-                                <div><b>NASA</b><i class="fas fa-circle-check wd-padding-left-2"></i></div>
+                            <div class="col-6 col-xxl-7 col-xl-6">
+                                <div class="text-truncate"><b>NASA</b><i
+                                        class="fas fa-circle-check wd-padding-left-2"></i></div>
                                 <div class="wd-text-color-normal">@NASA</div>
                             </div>
-                            <div class="col-3">
-                                <button class="btn btn-primary override-tuit">
+                            <div class="col-4 col-xxl-3 col-xl-4">
+                                <button class="btn btn-primary override-follow">
                                     Follow
                                 </button>
                             </div>
@@ -257,16 +326,39 @@
 
                     <li class="list-group-item">
                         <div class="row align-items-center">
-                            <div class="col-2">
+                            <div class="col-2 col-xxl-2 col-xl-2">
                                 <img src="../../images/tesla.jpeg"
                                     class="wd-rounded-corners-circle wd-image-size-follow">
                             </div>
-                            <div class="col-7">
-                                <div><b>Tesla</b><i class="fas fa-circle-check wd-padding-left-2"></i></div>
+                            <div class="col-6 col-xxl-7 col-xl-6">
+                                <div class="text-truncate"><b>Tesla</b><i
+                                        class="fas fa-circle-check wd-padding-left-2"></i></div>
                                 <div class="wd-text-color-normal">@Tesla</div>
                             </div>
-                            <div class="col-3">
-                                <button class="btn btn-primary override-tuit">
+                            <div class="col-4 col-xxl-3 col-xl-4">
+                                <button class="btn btn-primary override-follow">
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row align-items-center">
+                            <div class="col-2 col-xxl-2 col-xl-2">
+                                <img src="../../images/pointbet.png"
+                                    class="wd-rounded-corners-circle wd-image-size-follow">
+                            </div>
+                            <div class="col-6 col-xxl-7 col-xl-6">
+                                <div class="text-truncate"><b>PointBet Sportsbook</b><i
+                                        class="fas fa-circle-check wd-padding-left-2"></i></div>
+                                <div class="wd-text-color-normal">@PointBetUSA</div>
+                                <div class="wd-text-color-normal"><i class="fa fa-square-arrow-up-right px-1"></i>
+                                    Promoted
+                                </div>
+                            </div>
+                            <div class="col-4 col-xxl-3 col-xl-4">
+                                <button class="btn btn-primary override-follow">
                                     Follow
                                 </button>
                             </div>
@@ -274,14 +366,24 @@
                     </li>
 
 
+
+                    <li class="list-group-item wd-rounded-bottom-20">
+                        <span class="wd-text-color-highlight">Show more</span>
+                    </li>
                 </ul>
+
+
+                <div class="ps-3 mt-3">
+                    <span class="wd-text-color-posted py-2">Terms of Servers </span> <br />
+                    <span class="wd-text-color-posted py-2">@2023 Tuiter Inc. </span>
+
+                </div>
             </div>
+
+
         </div>
+
     </div>
-
-
-
-
 
 
 
