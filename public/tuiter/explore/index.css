@@ -392,6 +392,10 @@
   border: 0px;
 }
 
+.wd-list-group-none-border .list-group-item {
+  border: 0px;
+}
+
 
 /* Image */
 
