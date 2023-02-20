@@ -1,7 +1,7 @@
 
 const PostItem = (post) => {
     return (`
-            <div class="row border border-1 border-light border-top-0 pt-3  ">
+            <div class="row border border-1 border-light border-top-0 pt-3">
                 <div class="col-2 col-xl-1 col-md-1 ps-2 pt-1">
                     <img src=${post.avatarIcon}
                         class="rounded-circle wd-image-size-avatar px-0">

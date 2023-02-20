@@ -4,7 +4,7 @@ import ExploreComponent from "./ExploreComponent.js";
 
 function exploreScreen() {
     $('#wd-explore-screen').append(`
-<div class="row mt-2">
+<div class="row mt-3">
     <div class="col-2 col-md-2 col-lg-1 col-xl-2">
         ${NavigationSidebar("Explore")}
     </div>

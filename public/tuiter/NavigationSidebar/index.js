@@ -27,7 +27,7 @@ const NavigationSidebar = (active) => {
     }
 
     return (`
-   <div class="list-group mt-3">
+   <div class="list-group">
         <a href="#" class="list-group-item py-3"><i
                 class="fa fa-text-height fa-2x wd-text-color-highlight"></i></a>
                 
@@ -67,7 +67,7 @@ const NavigationSidebar = (active) => {
                 </a>
    </div>
    
-    <button class="btn btn-primary override-tuit wd-margin-top-8">Tuit</button>
+    <button class="btn btn-primary override-tuit mt-3">Tuit</button>
  `);
 }
 

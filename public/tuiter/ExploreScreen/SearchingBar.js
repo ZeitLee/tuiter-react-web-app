@@ -1,7 +1,7 @@
 const SearchingBarAndGear = () => {
     return (`
             <div class="row mt-3 mb-2 align-items-center">
-                <div class="col-11 position-relative ps-4">
+                <div class="col-11 position-relative ps-3">
                     <form id="search-tuiter">
                         <input
                             class="border-0 wd-rounded-corners-all-around wd-padding-top-bottom-lg wd-padding-left-lg wd-width-full wd-bg-color-search"

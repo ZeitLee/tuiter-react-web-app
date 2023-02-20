@@ -3,7 +3,7 @@ import WhoToFollowListItem from "./WhoToFollowListItem.js";
 
 const WhoToFollowList = () => {
     return (`
-       <ul class="list-group mt-3">
+       <ul class="list-group">
 
         <li class="list-group-item contsie wd-font-size-icons-m wd-rounded-top-20 ">
         <b>Who to follow</b></li>

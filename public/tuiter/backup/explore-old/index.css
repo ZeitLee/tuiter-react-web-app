@@ -1,0 +1,419 @@
+
+/* Color Styling */
+
+.wd-bg-color-black {
+    background-color: black;
+}
+
+.wd-bg-color-search {
+    background-color: rgb(231, 236, 241);
+}
+
+.wd-bg-color-lightblue {
+    background-color: rgb(29,161,242);
+}
+
+.wd-text-color-white {
+    color: white;
+}
+
+.wd-text-color-blue {
+    color: blue;
+}
+
+.wd-text-color-black {
+    color: black;
+}
+
+.wd-text-color-highlight {
+    color: rgb(29,161,242);
+}
+
+.wd-text-color-normal {
+    color: rgb(161, 168, 175);
+}
+
+.wd-text-color-posted {
+    color: rgb(110, 118, 125);
+}
+
+/* Font Size */
+.wd-link-font-size {
+    font-size: 15px;
+}
+
+.wd-posted-font-size {
+    font-size: 13px;
+}
+
+.wd-font-size-20 {
+    font-size: 20px;
+}
+
+.wd-font-size-lg {
+    font-size: 2em;
+}
+
+.wd-font-size-icons-s {
+    font-size: 1em;
+}
+
+.wd-font-size-icons-m {
+    font-size: 1.5em;
+}
+
+/* Font style */
+.wd-font-bold {
+  font-weight: bold;
+}
+
+/* Border */
+
+.wd-border-none {
+    border-width: 0;
+}
+
+.wd-normal-border {
+    border-width: 4px;
+    border-color: rgb(47, 51, 54);
+    border-style: solid; 
+}
+
+.wd-delimiter {
+    height: 10px;
+    background: rgb(30, 32, 34);
+}
+
+.wd-border-delimiter {
+    border-width: 2px;
+    border-color: rgb(47, 51, 54);
+    border-style: solid; 
+}
+
+.wd-section-border {
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-color: rgb(47, 51, 54);
+    border-style: solid; 
+}
+
+.wd-border-block {
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-top: 0px;
+    border-color: rgb(177, 177, 177);
+    border-style: solid; 
+}
+
+.wd-border-bottom-1 {
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 1px;
+    border-style: solid; 
+}
+
+.wd-border-bottom-5 {
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 5px;
+    border-style: solid; 
+}
+
+.wd-thin-border {
+    border-width: 4px;
+}
+
+.wd-no-border {
+    border-width: 0px;
+}
+
+.wd-border-solid {
+   border-style: solid; 
+}
+
+.wd-color-border {
+    border-color: rgb(231, 226, 226);
+}
+
+.wd-border-color-highlight {
+    border-color: rgb(29,161,242);;
+}
+
+.wd-border-main-content {
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-color: rgb(231, 226, 226);
+    border-style: solid; 
+}
+
+/* Margin */
+
+.wd-margin-offset {
+  margin-left: 16px;
+}
+
+.wd-margin-left-30 {
+  margin-left: 30px;
+}
+
+.wd-margin-right-12 {
+    margin-right: 12px;
+}
+
+.wd-margin-right-16 {
+    margin-right: 16px;
+}
+
+.wd-margin-top-4 {
+    margin-top: 4px;
+}
+
+.wd-margin-top-8 {
+    margin-top: 8px;
+}
+
+.wd-margin-top-12 {
+    margin-top: 12px;
+}
+
+.wd-margin-top-16 {
+    margin-top: 16px;
+}
+
+.wd-margin-bottom-4 {
+    margin-bottom: 4px;
+}
+
+.wd-margin-bottom-16 {
+    margin-bottom: 16px;
+}
+
+.wd-margin-twoside-16 {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+
+/* Padding */
+
+.wd-padding-fat {
+    padding: 16px;
+}
+
+.wd-padding-left-2 {
+    padding-left: 2px;
+}
+
+.wd-padding-left {
+    padding-left: 16px;
+}
+
+.wd-padding-left-50 {
+    padding-left: 50px;
+}
+
+.wd-padding-left-lg {
+    padding-left: 4em;
+}
+
+.wd-padding-right {
+    padding-right: 12px;
+}
+
+.wd-padding-right-12 {
+    padding-right: 12px;
+}
+
+.wd-padding-right-16 {
+    padding-right: 16px;
+}
+
+.wd-padding-top-16 {
+    padding-top: 16px;
+}
+
+.wd-padding-top-bottom-4 {
+    padding-top: 4px;
+    padding-bottom:4px;
+}
+
+
+.wd-padding-top-bottom-6 {
+    padding-top: 6px;
+    padding-bottom:6px;
+}
+
+.wd-padding-top-bottom-8 {
+    padding-top: 8px;
+    padding-bottom:8px;
+}
+
+.wd-padding-top-bottom-lg {
+    padding-top: .75em;
+    padding-bottom: .75rem;
+}
+
+
+/* Corners Styling */
+
+.wd-rounded-corners-top {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.wd-rounded-corners-bottom {
+    border-radius: 0px 0px 20px 20px;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+}
+
+.wd-rounded-corners-posted-picture {
+    border-radius: 10px;
+}
+
+.wd-rounded-corners-button {
+    border-radius: 20px;
+}
+
+.wd-rounded-corners-circle {
+    border-radius: 100%;
+}
+
+/* Width */
+.wd-width-full {
+    width : 100%;
+}
+
+
+
+/* Icon Gear */
+
+.wd-gear {
+  content: "\2699";
+}
+
+/* Grid */
+.wd-grid-row {
+   clear: both;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+
+.wd-float-left-content {
+    width: 70%;
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+/* Hyperlink */
+
+.wd-remove-underline {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Position */
+
+.wd-pos-relative-0 {
+    position: relative;
+}
+
+.wd-pos-abs-magnifying {
+    position: absolute;
+    left: 2em;
+    top: 16px;
+}
+
+.wd-pos-abs-picture-text {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+}
+
+.wd-pos-nav-icon {
+    position: absolute;
+    left: 5px;
+}
+
+.wd-pos-nav-text {
+    position: absolute;
+    left: 3em;
+    top: 1em;
+}
+
+/* Override */
+
+.btn-primary.override-tuit {
+   width: 100%;
+   border-width: 0px;
+   border-radius: 30px;
+   border-style: dashed;
+   font-size: 1em;
+   font-weight: bolder;
+   background-color: rgb(29,161,242);
+} 
+
+.btn-primary.override-follow {
+   width: 100%;
+   border-width: 0px;
+   border-radius: 30px;
+   border-style: dashed;
+   font-size: 1em;
+   font-weight: bolder;
+   background-color: black;
+}
+
+.wd-rounded-top-20 {
+  border-top-right-radius: 20px!important;
+  border-top-left-radius: 20px!important;
+}
+
+.wd-rounded-bottom-20 {
+  border-bottom-right-radius: 20px!important;
+  border-bottom-left-radius: 20px!important;
+}
+
+.wd-list-group-bg .list-group-item {
+  background-color: rgb(231, 236, 241);
+  border: 0px;
+}
+
+.wd-list-group-none-border .list-group-item {
+  border: 0px;
+}
+
+
+/* Image */
+
+.wd-image-size-follow {
+    width: 48px;
+    height: 48px;
+}
+
+.wd-image-size-posted {
+    width:100px;
+    height: 100px;
+}
+
+.wd-image-size-avatar {
+    width: 52px;
+    height: 52px;
+}
