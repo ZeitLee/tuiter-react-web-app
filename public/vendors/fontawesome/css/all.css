@@ -210,6 +210,15 @@
 .fa-square-arrow-up-right:before{
   content: "\f35d"; }
 
+.fa-link-slash:before{
+  content: "\f127"; }
+
+
+.arrow-up-right-from-square:before{
+  content: "\f35d"; }
+
+  
+
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */

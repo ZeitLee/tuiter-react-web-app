@@ -267,6 +267,10 @@
     border-radius: 20px 20px 0px 0px;
 }
 
+.wd-rounded-corners-bottom {
+    border-radius: 0px 0px 20px 20px;
+}
+
 .wd-rounded-corners-all-around {
     border-radius: 50px;
 }
@@ -407,4 +411,9 @@
 .wd-image-size-posted {
     width:100px;
     height: 100px;
+}
+
+.wd-image-size-avatar {
+    width: 52px;
+    height: 52px;
 }
