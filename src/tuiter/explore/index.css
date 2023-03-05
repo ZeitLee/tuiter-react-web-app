@@ -12,12 +12,13 @@
 }
 
 .wd-nudge-up {
-   top: 6px;
+   bottom: 18px;
    left: 25px;
 }
 
-.wd-nudge-bottom {
-   top: 18x;
+.wd-mag-pos {
+   position: absolute;
+   top: 6px;
    left: 25px;
 }
 
