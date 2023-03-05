@@ -6,9 +6,9 @@ const TodoList = () => {
             <h3>Todo List</h3>
             <ul>
                 {
-                    todos.map(todo => {
-                        return (<TodoItem todo={todo} />);
-                    })
+                    todos.map(todo =>
+                        (<TodoItem todo={todo} />)
+                    )
                 }
             </ul>
         </>
