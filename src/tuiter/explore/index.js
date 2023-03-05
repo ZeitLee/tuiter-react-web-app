@@ -12,7 +12,7 @@ const ExploreComponent = () => {
                     <i className="bi bi-search position-absolute 
                        wd-nudge-up"></i>
                 </div>
-                <div className="col-1 ">
+                <div className="col-1">
                     <i className="wd-bottom-4 text-primary float-end bi 
                        bi-gear-fill fs-2 position-relative"></i>
                 </div>
@@ -30,7 +30,7 @@ const ExploreComponent = () => {
             </ul>
             <div className="position-relative mb-2">
                 <img src="/images/starship-main.jpeg" className="w-100" />
-                <h1 className="position-absolute wd-nudge-up text-white">
+                <h1 className="position-absolute wd-nudge-bottom text-white">
                     SpaceX Starship</h1>
             </div>
             <PostSummaryList />
