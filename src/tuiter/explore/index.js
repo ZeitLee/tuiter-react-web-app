@@ -1,6 +1,7 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
+
 const ExploreComponent = () => {
     return (
         <>
@@ -11,7 +12,7 @@ const ExploreComponent = () => {
                     <i className="bi bi-search position-absolute 
                        wd-nudge-up"></i>
                 </div>
-                <div className="col-1">
+                <div className="col-1 ">
                     <i className="wd-bottom-4 text-primary float-end bi 
                        bi-gear-fill fs-2 position-relative"></i>
                 </div>
