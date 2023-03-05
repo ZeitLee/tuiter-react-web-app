@@ -18,19 +18,32 @@ const PostItem = (
             "link": "Netfilx.com",
             "comments": "4.2K",
             "share": "3.5K",
-            "like": "37.5K"
+            "like": "37.5K",
+            "isRetuited": false,
+            "RetuitedUser": "SpaceX"
         }
-    }
+    },
 ) => {
+    let retuitedTitle = <div></div>;
+    let retuitedThread = <div></div>;
+    if (post.isRetuited) {
+        retuitedTitle = <div>
+            <FontAwesomeIcon icon={faRetweet} className="ps-1 text-muted ps-5" />
+            <span className="text-muted ps-2 font-weight-bold">{post.RetuitedUser} retuited</span>
+        </div>
+        retuitedThread = <div className="text-primary py-2">Show this thread</div>
+    }
     return (
         <li className="list-group-item">
-            <div className="row border border-1 border-light border-top-0 pt-3">
+            {retuitedTitle}
+            <div className="row mt-1">
                 <div className="col-2 col-xl-1 col-md-1 ps-2 pt-1">
                     <img src={`/images/${post.avatarIcon}`}
                         className="rounded-circle px-0" height="48px" width="48px" />
                 </div>
 
                 <div className="col-10 col-xl-11 col-md-11 text-black ps-4">
+
                     <b>{post.userName}</b>
                     <FontAwesomeIcon icon={faCircleCheck} className="ps-1" />
                     <span className="text-muted px-2">@{post.handle} · {post.time}</span>
@@ -40,8 +53,8 @@ const PostItem = (
 
                     <div>
                         <img src={`/images/${post.image}`}
-                            className="rounded-top border border-2 border-light mb-0 mt-3" width="100%" />
-                        <div className="rounded-bottom border border-2 border-light border-top-0 px-3 pt-2">
+                            className="rounded-top border border-1 border-bold mb-0 mt-3" width="100%" />
+                        <div className="rounded-bottom border border-1 border-bold border-top-0 px-3 pt-2">
                             <div className="text-black pb-1">
                                 <b>{post.topic}</b>
                             </div>
@@ -83,6 +96,7 @@ const PostItem = (
                                 <FontAwesomeIcon icon={faArrowUpFromBracket} /></a>
                         </div>
                     </div>
+                    {retuitedThread}
                 </div>
             </div>
         </li >
