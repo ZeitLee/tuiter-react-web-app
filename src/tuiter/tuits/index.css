@@ -1,0 +1,12 @@
+/* Hyperlink */
+
+.wd-remove-underline {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Color */
+
+.wd-color-pink {
+    color: rgb(255, 46, 116);
+}
