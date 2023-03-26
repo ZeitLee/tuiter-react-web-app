@@ -56,7 +56,7 @@ const TuitItem = (
                         </div>
                     </div>
 
-                    <TuitStats replies={post.replies} retuits={post.retuits} likes={post.likes} liked={post.liked} />
+                    <TuitStats _id={post._id} replies={post.replies} retuits={post.retuits} likes={post.likes} liked={post.liked} />
                 </div>
             </div>
         </li >

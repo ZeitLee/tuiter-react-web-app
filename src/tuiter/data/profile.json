@@ -4,11 +4,12 @@
     "handle": "@Zeit-Lee",
     "profilePicture": "myAvatar.jpeg",
     "bannerPicture": "banner.jpeg",
-    "bio": "Master Degree, Computer Science. Enjoying developing games and softwares. Meeting friends in the world.",
+    "bio": "Computer Science Major. Enjoying developing games and softwares. Meeting friends in the world.",
     "website": "fake-website.com",
     "location": "Boston, MA",
-    "dateOfBirth": "01/02/1993",
-    "dateJoined": "4/2009",
+    "dateOfBirth": "1993-01-02",
+    "dateJoined": "April, 2009",
     "followingCount": 350,
-    "followersCount": 223
+    "followersCount": 223,
+    "tuits": 5232
 }

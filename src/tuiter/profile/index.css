@@ -1,4 +1,9 @@
-.wd-corner {
+.wd-left-bottom {
    bottom: -50px;
    left: 25px;
+}
+
+.wd-right-bottom {
+   bottom: -50px;
+   right: 25px;
 }

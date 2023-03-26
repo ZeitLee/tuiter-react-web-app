@@ -4,9 +4,6 @@ import { useSelector } from "react-redux";
 
 const ProfileComponent = () => {
     const profile = useSelector(state => state.profile)
-
-    console.log(profile);
-
     return (
         <Profile profile={profile} />
 

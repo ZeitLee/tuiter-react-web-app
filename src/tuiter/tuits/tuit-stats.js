@@ -3,9 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faArrowUpFromBracket, faRetweet } from '@fortawesome/free-solid-svg-icons';
 import { faComment, faHeart as farHeart } from '@fortawesome/free-regular-svg-icons';
 import "./index.css"
+import { useDispatch } from "react-redux";
+import { clickLikes } from "./tuits-reducer"
 
 const TuitStats = (
     {
+        _id = 123,
         replies = 123,
         retuits = 234,
         likes = 2345,
@@ -19,6 +22,11 @@ const TuitStats = (
         likeSection = <a className="wd-remove-underline">
             <FontAwesomeIcon icon={farHeart} />
             <span id="non-liked-icon" className="ps-2">{likes}</span></a>
+    }
+
+    const dispatch = useDispatch();
+    const clickLikesHandler = (id) => {
+        dispatch(clickLikes(id));
     }
 
     return (
@@ -36,7 +44,9 @@ const TuitStats = (
             </div>
 
             <div className="col-3 text-truncate">
-                {likeSection}
+                <span onClick={() => clickLikesHandler(_id)} className="">
+                    {likeSection}
+                </span>
             </div>
 
             <div className="col-3 text-truncate">
@@ -55,7 +65,7 @@ const addLike = (likes) => {
 };
 
 const cancelLike = () => {
-
+    console.log("Do");
 };
 
 export default TuitStats;
