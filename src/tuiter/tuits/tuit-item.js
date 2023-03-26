@@ -41,13 +41,10 @@ const TuitItem = (
                     <b>{post.userName}</b>
                     <FontAwesomeIcon icon={faCircleCheck} className="ps-1" />
                     <span className="text-muted px-2">{post.handle} · {post.time}</span>
-                    <FontAwesomeIcon icon={faEllipsis} className="text-muted float-end" />
-                    < br />
+                    <i className="bi bi-x-lg float-end"
+                        onClick={() => deleteTuitHandler(post._id)}></i>
 
                     <div>
-                        <i className="bi bi-x-lg float-end"
-                            onClick={() => deleteTuitHandler(post._id)}></i>
-
                         <div className="pt-1">
                             <div>
                                 <p className="text-muted"><small>

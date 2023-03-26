@@ -21,11 +21,11 @@
         "time": "4d",
         "image": "tesla.jpeg",
         "liked": true,
-        "replies": 123,
-        "retuits": 432,
-        "likes": 2345,
-        "handle": "@spacex",
-        "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+        "replies": 300,
+        "retuits": 610,
+        "likes": 4711,
+        "handle": "@tesla",
+        "tuit": "Tesla has entered a binding offtake agreement with Magnis Energy Technologies, an Australian company that will supply the company with anode active material (AAM) for three years."
     },
     {
         "_id": 345,
@@ -35,10 +35,10 @@
         "time": "2h",
         "image": "spacex.jpeg",
         "liked": false,
-        "replies": 222,
-        "retuits": 432,
-        "likes": 2345,
+        "replies": 180,
+        "retuits": 222,
+        "likes": 1987,
         "handle": "@spacex",
-        "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+        "tuit": "Following the reported funding round, the valuation of Elon Musk’s private space venture would likely stand at about $140 billion. This would effectively make SpaceX one of the largest privately-owned companies in the world by valuation. "
     }
 ]
