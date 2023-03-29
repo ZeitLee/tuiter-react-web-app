@@ -1,71 +1,89 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart, faArrowUpFromBracket, faRetweet } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faArrowUpFromBracket, faRetweet, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 import { faComment, faHeart as farHeart } from '@fortawesome/free-regular-svg-icons';
 import "./index.css"
 import { useDispatch } from "react-redux";
 import { clickLikes } from "./tuits-reducer"
+import { updateTuitThunk } from "../../services/tuits-thunks";
 
 const TuitStats = (
     {
-        _id = 123,
-        replies = 123,
-        retuits = 234,
-        likes = 2345,
-        liked = true
+        tuit = {
+            "_id": 123,
+            "topic": "Space",
+            "userName": "SpaceX",
+            "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+            "time": "2h",
+            "image": "tesla.jpeg",
+            "liked": true,
+            "replies": 123,
+            "retuits": 432,
+            "likes": 2345,
+            "dislikes": 123,
+            "handle": "@spacex",
+            "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+        }
     },
 ) => {
     let likeSection = <a className="wd-color-pink wd-remove-underline"  >
         <FontAwesomeIcon icon={faHeart} className="wd-color-pink" />
-        <span className="ps-2">{likes}</span></a >
-    if (!liked) {
+        <span className="ps-2">{tuit.likes}</span></a >
+    if (!tuit.liked) {
         likeSection = <a className="wd-remove-underline">
             <FontAwesomeIcon icon={farHeart} />
-            <span id="non-liked-icon" className="ps-2">{likes}</span></a>
+            <span id="non-liked-icon" className="ps-2">{tuit.likes}</span></a>
     }
 
     const dispatch = useDispatch();
-    const clickLikesHandler = (id) => {
-        dispatch(clickLikes(id));
+    const clickLikesHandler = () => {
+        dispatch(updateTuitThunk({
+            ...tuit,
+            likes: tuit.likes + 1
+        }));
+    }
+
+    const clicDislikesHandler = () => {
+        dispatch(updateTuitThunk({
+            ...tuit,
+            dislikes: tuit.dislikes + 1
+        }));
     }
 
     return (
         <div className="row mt-3 text-muted pb-3">
-            <div className="col-3 text-truncate">
+            <div className="col-2 text-truncate">
                 <a className="wd-remove-underline" href="#">
                     <FontAwesomeIcon icon={faComment} />
-                    <span className="ps-2">{replies}</span></a>
+                    <span className="ps-2">{tuit.replies}</span></a>
             </div>
 
-            <div className="col-3 text-truncate">
+            <div className="col-2 text-truncate">
                 <a className="wd-remove-underline" href="#">
                     <FontAwesomeIcon icon={faRetweet} />
-                    <span className="ps-2">{retuits}</span></a>
+                    <span className="ps-2">{tuit.retuits}</span></a>
             </div>
 
-            <div className="col-3 text-truncate">
-                <span onClick={() => clickLikesHandler(_id)} className="">
-                    {likeSection}
-                </span>
+            <div className="col-2 text-truncate">
+                <div>
+                    <i onClick={clickLikesHandler} className="bi bi-heart-fill me-2 text-danger"></i>
+                    {tuit.likes}
+                </div>
             </div>
 
-            <div className="col-3 text-truncate">
+            <div className="col-2 text-truncate">
+                <div>
+                    <FontAwesomeIcon icon={faThumbsDown} onClick={clicDislikesHandler} className="me-2" />
+                    {tuit.dislikes}
+                </div>
+            </div>
+
+            <div className="col-1 text-truncate">
                 <a className="wd-remove-underline" href="#">
                     <FontAwesomeIcon icon={faArrowUpFromBracket} /></a>
             </div>
-        </div>
+        </div >
     );
-};
-
-const addLike = (likes) => {
-    let p = document.getElementById("non-liked-icon");
-    console.log(p);
-    p = p + 1;
-    likes = p;
-};
-
-const cancelLike = () => {
-    console.log("Do");
 };
 
 export default TuitStats;

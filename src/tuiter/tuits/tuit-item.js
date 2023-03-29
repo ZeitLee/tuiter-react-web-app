@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck, faEllipsis } from '@fortawesome/free-solid-svg-icons';
 import TuitStats from "./tuit-stats.js"
-import { deleteTuit } from "../tuits/tuits-reducer";
+import { deleteTuitThunk } from "../../services/tuits-thunks";
 
 const TuitItem = (
     {
@@ -18,6 +18,7 @@ const TuitItem = (
             "replies": 123,
             "retuits": 432,
             "likes": 2345,
+            "dislikes": 123,
             "handle": "@spacex",
             "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
         }
@@ -25,7 +26,7 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return (
@@ -53,7 +54,7 @@ const TuitItem = (
                         </div>
                     </div>
 
-                    <TuitStats _id={post._id} replies={post.replies} retuits={post.retuits} likes={post.likes} liked={post.liked} />
+                    <TuitStats tuit={post} />
                 </div>
             </div>
         </li >
