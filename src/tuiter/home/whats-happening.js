@@ -17,7 +17,7 @@ const WhatsHappening = () => {
             likes: 0,
             replies: 0,
             retuits: 0,
-            dislike: 0
+            dislikes: 0,
         }
         dispatch(createTuitThunk(newTuit));
     }
