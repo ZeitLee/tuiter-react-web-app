@@ -3,7 +3,7 @@ const PostSummaryItem = (
     {
         post = {
             "topic": "Space",
-            "userName": "SpaceX",
+            "username": "SpaceX",
             "time": "2h",
             "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
             "image": "tesla.png"
@@ -14,7 +14,7 @@ const PostSummaryItem = (
         <li className="list-group-item">
             <div className="row py-1 align-items-center" >
                 <div className="col-9 col-xl-9 col-lg-9 col-md-9 col-sm-8">
-                    <div className="text-muted">{post.userName} . {post.time}</div>
+                    <div className="text-muted">{post.username} · {post.time}</div>
                     <div className="fw-bolder">{post.topic}</div>
                     <div className="text-muted">{post.title}</div>
                 </div>

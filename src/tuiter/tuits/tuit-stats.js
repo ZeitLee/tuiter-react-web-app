@@ -26,20 +26,12 @@ const TuitStats = (
         }
     },
 ) => {
-    let likeSection = <a className="wd-color-pink wd-remove-underline"  >
-        <FontAwesomeIcon icon={faHeart} className="wd-color-pink" />
-        <span className="ps-2">{tuit.likes}</span></a >
-    if (!tuit.liked) {
-        likeSection = <a className="wd-remove-underline">
-            <FontAwesomeIcon icon={farHeart} />
-            <span id="non-liked-icon" className="ps-2">{tuit.likes}</span></a>
-    }
-
     const dispatch = useDispatch();
     const clickLikesHandler = () => {
         dispatch(updateTuitThunk({
             ...tuit,
-            likes: tuit.likes + 1
+            likes: tuit.likes + 1,
+            liked: true
         }));
     }
 
@@ -49,6 +41,18 @@ const TuitStats = (
             dislikes: tuit.dislikes + 1
         }));
     }
+
+
+    let likeSection = <a className="wd-color-pink wd-remove-underline" onClick={clickLikesHandler}>
+        <FontAwesomeIcon icon={faHeart} className="wd-color-pink" />
+        <span className="ps-2">{tuit.likes}</span></a >
+    if (!tuit.liked) {
+        likeSection = <a className="wd-remove-underline" onClick={clickLikesHandler}>
+            <FontAwesomeIcon icon={farHeart} />
+            <span id="non-liked-icon" className="ps-2">{tuit.likes}</span></a>
+    }
+
+
 
     return (
         <div className="row mt-3 text-muted pb-3">
@@ -65,10 +69,7 @@ const TuitStats = (
             </div>
 
             <div className="col-2 text-truncate">
-                <div>
-                    <i onClick={clickLikesHandler} className="bi bi-heart-fill me-2 text-danger"></i>
-                    {tuit.likes}
-                </div>
+                {likeSection}
             </div>
 
             <div className="col-2 text-truncate">
