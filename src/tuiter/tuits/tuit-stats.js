@@ -45,11 +45,11 @@ const TuitStats = (
 
     let likeSection = <a className="wd-color-pink wd-remove-underline" onClick={clickLikesHandler}>
         <FontAwesomeIcon icon={faHeart} className="wd-color-pink" />
-        <span className="ps-2">{tuit.likes}</span></a >
+        <span className="ps-1">{tuit.likes}</span></a >
     if (!tuit.liked) {
         likeSection = <a className="wd-remove-underline" onClick={clickLikesHandler}>
             <FontAwesomeIcon icon={farHeart} />
-            <span id="non-liked-icon" className="ps-2">{tuit.likes}</span></a>
+            <span id="non-liked-icon" className="ps-1">{tuit.likes}</span></a>
     }
 
 
@@ -59,13 +59,13 @@ const TuitStats = (
             <div className="col-2 text-truncate">
                 <a className="wd-remove-underline" href="#">
                     <FontAwesomeIcon icon={faComment} />
-                    <span className="ps-2">{tuit.replies}</span></a>
+                    <span className="ps-1">{tuit.replies}</span></a>
             </div>
 
             <div className="col-2 text-truncate">
                 <a className="wd-remove-underline" href="#">
                     <FontAwesomeIcon icon={faRetweet} />
-                    <span className="ps-2">{tuit.retuits}</span></a>
+                    <span className="ps-1">{tuit.retuits}</span></a>
             </div>
 
             <div className="col-2 text-truncate">
@@ -74,7 +74,7 @@ const TuitStats = (
 
             <div className="col-2 text-truncate">
                 <div>
-                    <FontAwesomeIcon icon={faThumbsDown} onClick={clicDislikesHandler} className="me-2" />
+                    <FontAwesomeIcon icon={faThumbsDown} onClick={clicDislikesHandler} className="me-1" />
                     {tuit.dislikes}
                 </div>
             </div>
